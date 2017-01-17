@@ -38,7 +38,7 @@ public class getLocation extends AppCompatActivity implements LocationListener {
             ActivityCompat.requestPermissions(this, new String[] { Manifest.permission.ACCESS_COARSE_LOCATION },
                     PERMISSION_ACCESS_COARSE_LOCATION);
         }
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10, 0, this);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
     }
 
     @Override
